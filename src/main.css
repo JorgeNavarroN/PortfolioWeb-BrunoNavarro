@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+p, span, label, a {
+  font-size: 20px;
+}
+
+strong {
+  color: #3DDC84;
+}
