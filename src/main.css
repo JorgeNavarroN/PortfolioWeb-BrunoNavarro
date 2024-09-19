@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 p, span, label, a {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 strong {
@@ -27,5 +31,30 @@ h4 {
   position: absolute;
   width: 32px;
   height: 32px;
+  background-color: #2B3136;
+  border: 2px solid #3DDC84;
+}
+
+.puesto-actual::after {
+  top: 20%;
+  left: 25%;
+  border-radius: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
   background-color: #3DDC84;
+}
+
+.lineTime {
+  top: 112px;
+  width: 100vw;
+  height: 8px;
+  position: absolute;
+  background-color: #2D4960;
+}
+
+.linkProyect {
+  font-size: 32px;
 }
