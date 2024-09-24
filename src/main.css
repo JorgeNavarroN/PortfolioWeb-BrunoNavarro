@@ -7,7 +7,7 @@ body {
 }
 
 p, span, label, a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 strong {
@@ -23,7 +23,7 @@ h4 {
 }
 
 .puesto::after {
-  top: 20%;
+  top: 25%;
   left: 25%;
   border-radius: 100%;
   content: '';
@@ -31,12 +31,12 @@ h4 {
   position: absolute;
   width: 32px;
   height: 32px;
-  background-color: #2B3136;
+  background-color: #1e293b ;
   border: 2px solid #3DDC84;
 }
 
 .puesto-actual::after {
-  top: 20%;
+  top: 25%;
   left: 25%;
   border-radius: 100%;
   content: '';
@@ -64,7 +64,7 @@ h4 {
   display: block;
   position: absolute;
   content: '';
-  height: 2px;
+  height: 3px;
   width: 0px;
   background-color: white;
   transition: 0.2s ease-in-out;
@@ -80,4 +80,19 @@ h4 {
 
 .linkProyect:hover > svg {
   transform: translateY(-3px);
+}
+
+.link::after {
+  bottom: 0;
+  display: block;
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 0px;
+  background-color: white;
+  transition: 150ms ease-in-out;
+}
+
+.link:hover::after {
+  width: 100%;
 }
