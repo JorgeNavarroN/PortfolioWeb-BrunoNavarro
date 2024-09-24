@@ -58,3 +58,26 @@ h4 {
 .linkProyect {
   font-size: 32px;
 }
+
+.linkProyect::after {
+  bottom: 0;
+  display: block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.linkProyect > svg {
+  transition: 0.2s ease-in-out;
+}
+
+.linkProyect:hover::after {
+  width: 100%;
+}
+
+.linkProyect:hover > svg {
+  transform: translateY(-3px);
+}

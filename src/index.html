@@ -10,20 +10,20 @@
 
 <body class="bg-[#2B3136] text-white">
   <header>
-    <nav class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] absolute">
+    <nav class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] top-1/2 left-[2rem] -translate-y-1/2 fixed">
       <ul class="py-[50px] px-[8px] bg-[#2B3136] flex flex-col gap-[48px] rounded-full">
-        <li class="cursor-pointer"><img src="../assets/icons/experienceicon.svg" width="32px" height="32px"
-            alt="experienceicon.svg"></li>
-        <li class="cursor-pointer"><img src="../assets/icons/proyectsicon.png" width="32px" height="32px" alt=""></li>
-        <li class="cursor-pointer"><img src="../assets/icons/profileicon.svg" width="32px" height="32px"
-            alt="sobremi.png"></li>
-        <li class="cursor-pointer"><img src="../assets/icons/contacticon.svg" width="32px" height="32px"
-            alt="contacto.png"></li>
+        <li class="cursor-pointer"><a href="#experienceSection"><img src="../assets/icons/experienceicon.svg" width="32px" height="32px"
+          alt="experienceicon.svg"></a></li>
+        <li class="cursor-pointer"><a href="#projectsSection"><img src="../assets/icons/proyectsicon.png" width="32px" height="32px" alt=""></a></li>
+        <li class="cursor-pointer"><a href="#aboutMeSection"><img src="../assets/icons/profileicon.svg" width="32px" height="32px"
+          alt="sobremi.png"></a></li>
+        <li class="cursor-pointer"><a href="#contactSection"><img src="../assets/icons/contacticon.svg" width="32px" height="32px"
+          alt="contacto.png"></a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="px-[150px] flex flex-col gap-40">
+  <main class="px-[180px] flex flex-col gap-40 my-[10rem]">
     <article class="flex flex-col gap-5">
       <span class="flex flex-row gap-5">
         <h1 class="text-[84px] font-bold">Bruno Navarro</h1>
@@ -71,10 +71,10 @@
       </ul>
     </article>
 
-    <section class="flex flex-col gap-32 w-[1080px]">
+    <section class="flex flex-col gap-14 w-[1080px]" id="experienceSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/experienceicon.svg" width="48" height="48" alt="experience.png">
-        <h2 class="text-[35px] font-bold">Experiencia Laboral</h2>
+        <h2 class="text-[35px] my-10 font-bold">Experiencia Laboral</h2>
       </span>
       <ol class="flex flex-row gap-16">
         <li class="">
@@ -127,21 +127,20 @@
       </ol>
     </section>
 
-    <section class="flex flex-col gap-32 w-[1080px]">
+    <section class="flex flex-col gap-12 w-[1080px]" id="projectsSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/proyectsicon.png" width="48" height="48" alt="proyectos.png">
-        <h2 class="text-[35px] font-bold">Proyectos</h2>
+        <h2 class="text-[35px] my-10 font-bold">Proyectos</h2>
       </span>
-      <ul>
+      <ul class="flex flex-col gap-10">
         <li class="flex flex-row justify-between">
-          <div class="bg-black w-[320px] h-[200px] grid place-content-center rounded-3xl">
+          <div class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
             <img src="../assets/img/nullOut_image.png" width="252" alt="logoNullOut.png">
           </div>
           <div class="w-[720px] flex flex-col justify-between">
-            <a class="linkProyect flex flex-row items-center" href="">
+            <a href="https://github.com/brunonavarro/NullOutLib" target="_blank" class="linkProyect flex flex-row items-center w-fit relative" href="">
               NullOut
-              <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
-                fill="#ffffff">
+              <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
                 <g id="SVGRepo_iconCarrier">
@@ -157,45 +156,88 @@
               principio para reducir nulos en el código. Esta herramienta mejora la cobertura y calidad del código en
               SonarQube.
             </p>
-            <div class="bg-[#211D23] w-[120px] h-[30px] grid place-content-center justify-center rounded-full" for="">
+            <div class="bg-[#211D23] w-[120px] h-[39px] grid place-content-center justify-center rounded-full" for="">
               <img src="../assets/icons/kotlinicon.svg" width="82px" alt="kotlinlogo.png">
             </div>
           </div>
         </li>
 
-        <li>
-          <img src="" alt="logoSideSheetComposeDialog.png">
-          <div>
-            <a href="">SideSheetComposeDialog</a>
+        <li class="flex flex-row justify-between">
+          <div class="w-[720px] flex flex-col justify-between">
+            <a href="https://github.com/brunonavarro/SideSheetComposeDialog" target="_blank" class="linkProyect flex flex-row items-center w-fit relative" href="">
+              SideSheetComposeDialog
+              <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                <g id="SVGRepo_iconCarrier">
+                  <path fill="#ffffff"
+                    d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z" />
+                  <path fill="#ffffff"
+                    d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z" />
+                </g>
+              </svg>
+            </a>
             <p>
               Desarrollé una librería inspirada en SideSheetBehavior de Material Design con Jetpack Compose, para
               solucionar problemas de compatibilidad con versiones anteriores en proyectos grandes y específicos.
             </p>
-            <label for=""><img src="" alt="kotlinlogo.png"></label>
-            <label for=""><img src="" alt="JetpackComposeLogo.png">Jetpack Compose</label>
+            <span class="flex flex-row gap-7 items-center">
+              <div class="bg-[#211D23] w-[120px] h-[39px] grid place-content-center justify-center rounded-full" for="">
+                <img src="../assets/icons/kotlinicon.svg" width="82px" alt="kotlinlogo.png">
+              </div>
+              <label
+                class="flex flex-row items-center bg-white h-[39px] w-fit px-5 rounded-full text-black font-bold"><img
+                  src="../assets/icons/jetpackCompose-icon.png" alt="JetpackComposeLogo.png" width="40"
+                  height="43.29">Jetpack Compose</label>
+            </span>
+          </div>
+          <div class="bg-white w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
+            <img src="../assets/img/sideSheetComposeDialog_image.png" width="252" alt="logoNullOut.png">
           </div>
         </li>
 
-        <li>
-          <img src="" alt="logoDragDroid.png">
-          <div>
-            <a href="">DragDroid</a>
+        <li class="flex flex-row justify-between">
+          <div class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
+            <img src="../assets/img/dragoDroidImage-dark.png" width="252" alt="logoNullOut.png">
+          </div>
+          <div class="w-[720px] flex flex-col justify-between">
+            <a href="https://github.com/brunonavarro/DragDroid" target="_blank" class="linkProyect flex flex-row items-center w-fit relative" href="">
+              DragDroid
+              <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                <g id="SVGRepo_iconCarrier">
+                  <path fill="#ffffff"
+                    d="M768 256H353.6a32 32 0 1 1 0-64H800a32 32 0 0 1 32 32v448a32 32 0 0 1-64 0V256z" />
+                  <path fill="#ffffff"
+                    d="M777.344 201.344a32 32 0 0 1 45.312 45.312l-544 544a32 32 0 0 1-45.312-45.312l544-544z" />
+                </g>
+              </svg>
+            </a>
             <p>
               Proyecto de Libreria enfocado a soluciones Mobile Android que involucren eventos de Arrastrar y soltar.
               Cuyo máximo alcance es como administrador de actividades o lista de tareas. Desarrollado con Jetpack
               Compose.
             </p>
-            <label for=""><img src="" alt="kotlinlogo.png"></label>
-            <label for=""><img src="" alt="JetpackComposeLogo.png">Jetpack Compose</label>
+            <span class="flex flex-row gap-7 items-center">
+              <div class="bg-[#211D23] w-[120px] h-[39px] grid place-content-center justify-center rounded-full" for="">
+                <img src="../assets/icons/kotlinicon.svg" width="82px" alt="kotlinlogo.png">
+              </div>
+              <label
+                class="flex flex-row items-center bg-white h-[39px] w-fit px-5 rounded-full text-black font-bold"><img
+                  src="../assets/icons/jetpackCompose-icon.png" alt="JetpackComposeLogo.png" width="40"
+                  height="43.29">Jetpack Compose</label>
+            </span>
           </div>
         </li>
+
       </ul>
     </section>
 
-    <section>
+    <section id="aboutMeSection">
       <span>
         <img src="" alt="sobreMi.png">
-        <h2>Sobre mi</h2>
+        <h2 class=" my-10">Sobre mi</h2>
       </span>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt debitis atque alias ad, laudantium harum
@@ -209,9 +251,9 @@
       <img src="" alt="fotobruno.png">
     </section>
 
-    <section>
+    <section id="contactSection">
       <span>
-        <h2>¿Quieres contactarme?</h2>
+        <h2 class=" my-10">¿Quieres contactarme?</h2>
         <p>¡Enviame un email por este medio!</p>
       </span>
       <form action="">

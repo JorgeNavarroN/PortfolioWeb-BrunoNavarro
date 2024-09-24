@@ -554,17 +554,30 @@ video {
   --tw-contain-style:  ;
 }
 
-.absolute {
-  position: absolute;
+.fixed {
+  position: fixed;
 }
 
 .relative {
   position: relative;
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.left-\[2rem\] {
+  left: 2rem;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-\[10rem\] {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .inline-block {
@@ -584,8 +597,8 @@ video {
   height: 114px;
 }
 
-.h-\[180px\] {
-  height: 180px;
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-\[28px\] {
@@ -596,24 +609,16 @@ video {
   height: 350px;
 }
 
-.h-\[200px\] {
-  height: 200px;
-}
-
-.h-\[10px\] {
-  height: 10px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[30px\] {
-  height: 30px;
+.h-\[39px\] {
+  height: 39px;
 }
 
 .w-\[1080px\] {
   width: 1080px;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[28px\] {
@@ -632,20 +637,14 @@ video {
   width: 720px;
 }
 
-.w-\[30px\] {
-  width: 30px;
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.w-\[108px\] {
-  width: 108px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[120px\] {
-  width: 120px;
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -680,6 +679,18 @@ video {
   gap: 0.25rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -696,16 +707,16 @@ video {
   gap: 0.75rem;
 }
 
-.gap-32 {
-  gap: 8rem;
-}
-
 .gap-40 {
   gap: 10rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-\[48px\] {
@@ -733,6 +744,11 @@ video {
   border-color: rgb(45 73 96 / var(--tw-border-opacity));
 }
 
+.bg-\[\#211D23\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 29 35 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#2B3136\] {
   --tw-bg-opacity: 1;
   background-color: rgb(43 49 54 / var(--tw-bg-opacity));
@@ -748,17 +764,9 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#211D23\] {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 29 35 / var(--tw-bg-opacity));
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .px-10 {
@@ -766,9 +774,14 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-\[150px\] {
-  padding-left: 150px;
-  padding-right: 150px;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-\[180px\] {
+  padding-left: 180px;
+  padding-right: 180px;
 }
 
 .px-\[8px\] {
@@ -784,21 +797,6 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-\[10px\] {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .align-text-bottom {
@@ -817,9 +815,19 @@ video {
   font-weight: 700;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-\[0_0_5px_rgba\(0\2c 0\2c 0\2c 0\.53\)\] {
+  --tw-drop-shadow: drop-shadow(0 0 5px rgba(0,0,0,0.53));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .drop-shadow-\[0_0_5px_rgba\(198\2c 170\2c 227\2c 0\.53\)\] {
@@ -882,4 +890,27 @@ h4 {
 
 .linkProyect {
   font-size: 32px;
+}
+
+.linkProyect::after {
+  bottom: 0;
+  display: block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 0px;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.linkProyect > svg {
+  transition: 0.2s ease-in-out;
+}
+
+.linkProyect:hover::after {
+  width: 100%;
+}
+
+.linkProyect:hover > svg {
+  transform: translateY(-3px);
 }
