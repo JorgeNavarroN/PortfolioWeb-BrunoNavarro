@@ -96,3 +96,26 @@ h4 {
 .link:hover::after {
   width: 100%;
 }
+
+.tooltip {
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  display: inline;
+  z-index: 1;
+  opacity: 0; /* Comienza con opacidad 0 */
+  transition: all 0.2s; /* Transición suave para la aparición del tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 50px rgb(19, 25, 29) inset !important; /* Cambia el fondo a blanco */
+  -webkit-text-fill-color: rgb(255, 255, 255) !important; /* Cambia el color del texto */
+  -webkit-border-radius: 0 0 0 0;
+}

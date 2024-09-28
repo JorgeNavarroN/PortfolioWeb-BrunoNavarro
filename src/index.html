@@ -6,29 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bruno Navarro | Android Developer</title>
   <link rel="stylesheet" href="../dist/output.css">
+  <script src="./script.js"></script>
 </head>
 
-<body class="bg-gradient-to-t justify-center items-center flex flex-col from-gray-950 via-gray-900 to-gray-800 text-white">
+<body
+  class="bg-gradient-to-t justify-center items-center flex flex-col from-gray-950 via-gray-900 to-gray-800 text-white">
   <header class="w-[920px] relative">
-    <nav class="top-1/2 left-5 -translate-y-1/2 fixed">
-      <ul class="flex flex-col w-[50px] h-[300px] justify-between items-center">
-        <li class="cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] transition-all duration-200"><a href="#experienceSection"><img class="w-[36px] h-[36px] transition-all duration-150 hover:scale-150" src="../assets/icons/experienceicon.svg" alt="experienceicon.svg"></a></li>
-        <li class="cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] transition-all duration-200"><a href="#projectsSection"><img class="w-[36px] h-[36px] transition-all duration-150 hover:scale-150" src="../assets/icons/proyectsicon.png" width="36px"
-              height="36px" alt=""></a></li>
-        <li class="cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] transition-all duration-200"><a href="#aboutMeSection"><img class="w-[36px] h-[36px] transition-all duration-150 hover:scale-150" src="../assets/icons/profileicon.svg" width="36px"
-              height="36px" alt="sobremi.png"></a></li>
-        <li class="cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] transition-all duration-200"><a href="#contactSection"><img class="w-[36px] h-[36px] transition-all duration-150 hover:scale-150" src="../assets/icons/contacticon.svg" width="36px"
-              height="36px" alt="contacto.png"></a></li>
+    <nav class="top-1/2 left-[4rem] -translate-y-1/2 fixed">
+      <ul class="flex flex-col w-[50px] h-[400px] justify-between items-center">
+        <li id="experience"
+          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#experienceSection">
+            <img class="w-[36px] h-[36px]" src="../assets/icons/experienceicon.svg" alt="experience.svg">
+            <span class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Experiencia</span>
+          </a>
+        </li>
+        <li id="projects"
+          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#projectsSection">
+            <img class="w-[36px] h-[36px]" src="../assets/icons/proyectsicon.png" width="36px" height="36px"
+              alt="projects.png">
+            <span class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Proyectos</span>
+          </a>
+        </li>
+        <li id="aboutMe"
+          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#aboutMeSection"><img class="w-[36px] h-[36px]"
+              src="../assets/icons/profileicon.svg" width="36px" height="36px" alt="sobremi.svg"><span
+              class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Sobre Mí</span></a>
+        </li>
+        <li id="contact"
+          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#contactSection"><img class="w-[36px] h-[36px]"
+              src="../assets/icons/contacticon.svg" width="36px" height="36px" alt="contacto.svg"><span
+              class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Contacto</span></a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <main class="flex flex-col gap-28 my-[10rem]">
-    <article class="flex flex-col gap-5 w-[920px]">
+  <main class="flex flex-col gap-36 my-[10rem]">
+    <article class="flex flex-col gap-5 w-[920px] seccion">
       <span class="flex flex-row gap-5">
         <h1 class="text-[82px] font-bold">Bruno Navarro</h1>
-        <img class="size-[114px] rounded-[20px] border-[5px] border-[#2D4960]" src="https://github.com/brunonavarro.png"
-          alt="mifotogithub.png">
+        <!-- <img class="size-[114px] rounded-[20px] border-[5px] border-[#2D4960]" src="https://github.com/brunonavarro.png"
+          alt="mifotogithub.png"> -->
       </span>
       <p class="text-[24px]">
         <strong>Ingeniero en Informática</strong>, con <strong>4 años de experiencia</strong> en <br> Desarrollo de
@@ -47,8 +69,8 @@
             d="M930.77,536.42a53.07,53.07,0,1,1,53.06-53.08,53.14,53.14,0,0,1-53.06,53.08m-586.54,0a53.07,53.07,0,1,1,53.06-53.08,53.13,53.13,0,0,1-53.06,53.08M949.8,216.77,1055.85,33.09A22.06,22.06,0,1,0,1017.64,11L910.25,197c-82.12-37.48-174.35-58.35-272.76-58.35S446.86,159.55,364.74,197L257.36,11a22.06,22.06,0,1,0-38.22,22.06L325.2,216.77C143.09,315.82,18.53,500.18.31,718H1274.69c-18.24-217.82-142.79-402.18-324.89-501.23" />
         </svg>
       </p>
-      <span class="flex flex-row gap-1 text-[24px] items-center"><img src="../assets/icons/locationicon.svg" width="48px" height="48px"
-          alt="ubiclogo.png"> Piura - Perú 🇵🇪</span>
+      <span class="flex flex-row gap-1 text-[24px] items-center"><img src="../assets/icons/locationicon.svg"
+          width="48px" height="48px" alt="ubiclogo.png"> Piura - Perú 🇵🇪</span>
       <ul class="flex flex-row gap-5">
         <li>
           <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
@@ -58,13 +80,15 @@
           </a>
         </li>
         <li>
-          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200" href=""  target="_blank">
+          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
+            href="" target="_blank">
             <img src="../assets/icons/emailicon.svg" width="24" height="24" alt="correo.png">
             Contactame
           </a>
         </li>
         <li>
-          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200" href="https://github.com/brunonavarro" target="_blank">
+          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
+            href="https://github.com/brunonavarro" target="_blank">
             <img src="../assets/icons/githubicon-dark.svg" width="24" height="24" alt="github.png">
             Github
           </a>
@@ -72,7 +96,7 @@
       </ul>
     </article>
 
-    <section class="flex flex-col gap-14 w-[920px]" id="experienceSection">
+    <section class="flex flex-col gap-14 w-[920px] seccion" id="experienceSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/experienceicon.svg" width="48" height="48" alt="experience.png">
         <h2 class="text-[35px] my-10 font-bold">Experiencia Laboral</h2>
@@ -128,7 +152,7 @@
       </ol>
     </section>
 
-    <section class="flex flex-col gap-10 w-[920px]" id="projectsSection">
+    <section class="flex flex-col gap-10 w-[920px] seccion" id="projectsSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/proyectsicon.png" width="48" height="48" alt="proyectos.png">
         <h2 class="text-[35px] my-10 font-bold">Proyectos</h2>
@@ -241,7 +265,7 @@
       </ul>
     </section>
 
-    <section id="aboutMeSection" class=" w-[920px]">
+    <section class="w-[920px] seccion" id="aboutMeSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/profileicon.svg" width="48" height="48" alt="sobreMi.png">
         <h2 class="text-[35px] my-10 font-bold">Sobre mi</h2>
@@ -269,25 +293,43 @@
       </div>
     </section>
 
-    <section id="contactSection" class=" w-[920px] items-center flex flex-col gap-14">
+    <section class="w-[920px] items-center flex flex-col gap-14 seccion" id="contactSection">
       <span class="flex flex-col items-center">
         <h2 class="text-[35px] font-bold">¿Quieres contactarme?</h2>
         <p class="text-[24px]">¡Enviame un email por este medio!</p>
       </span>
-      <form class="grid gap-7 w-[780px]" action="">
+      <form class="grid gap-7 w-[780px]" id="emailForm">
         <div class="flex flex-row justify-center gap-10 h-12">
-          <input class="bg-[#15191b] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] rounded-full px-[40px] py-[10px] w-[100%] outline-none" type="text" name="nombre" id="" placeholder="Nombre">
-          <input class="bg-[#15191b] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] rounded-full px-[40px] py-[10px] w-[100%] outline-none" type="text" name="apellidos" id="" placeholder="Apellidos">
+          <div class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] rounded-full overflow-hidden">
+            <input class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[100%] outline-none" id="nombre" type="text"
+              placeholder="Nombre" required>
+          </div>
+          <div class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] h-[100%] rounded-full overflow-hidden">
+            <input class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[100%] outline-none" id="apellido" type="text"
+              placeholder="Apellidos" required>
+          </div>
         </div>
-        <input class="bg-[#15191b] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] rounded-full px-[40px] py-[10px] h-12 outline-none" type="email" name="email" id="" placeholder="Email">
-        <div class="flex flex-col gap-[0.1rem] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] overflow-hidden outline-none">
-          <input class="bg-[#15191b] px-[40px] py-[20px] rounded-t-[2rem] h-12 outline-none" type="text" name="" id="" placeholder="Asunto">
-          <div class="relative w-[100%]">
-            <textarea class="bg-[#15191b] px-[40px] py-[15px] h-[200px] border-[#C6AAE3] outline-none w-[100%] rounded-b-[2rem] resize-none" name="" id="" placeholder="Mensaje..."></textarea>
-            <button class="top-4 right-5 absolute"><svg class="hover:scale-125 transition-all duration-100" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-              <g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2111 2.06722L3.70001 5.94499C1.63843 6.46039 1.38108 9.28612 3.31563 10.1655L8.09467 12.3378C9.07447 12.7831 10.1351 12.944 11.1658 12.8342C11.056 13.8649 11.2168 14.9255 11.6622 15.9053L13.8345 20.6843C14.7139 22.6189 17.5396 22.3615 18.055 20.3L21.9327 4.78886C22.3437 3.14517 20.8548 1.6563 19.2111 2.06722ZM8.92228 10.517C9.85936 10.943 10.9082 10.9755 11.8474 10.6424C12.2024 10.5165 12.5417 10.3383 12.8534 10.1094C12.8968 10.0775 12.9397 10.0446 12.982 10.0108L15.2708 8.17974C15.6351 7.88831 16.1117 8.36491 15.8202 8.7292L13.9892 11.018C13.9553 11.0603 13.9225 11.1032 13.8906 11.1466C13.6617 11.4583 13.4835 11.7976 13.3576 12.1526C13.0244 13.0918 13.057 14.1406 13.4829 15.0777L15.6552 19.8567C15.751 20.0673 16.0586 20.0393 16.1147 19.8149L19.9925 4.30379C20.0372 4.12485 19.8751 3.96277 19.6962 4.00751L4.18509 7.88528C3.96065 7.94138 3.93264 8.249 4.14324 8.34473L8.92228 10.517Z" fill="#C6AAE3"/></g>
+        <div class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] rounded-full overflow-hidden">
+          <input
+            class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[112%] outline-none" id="email" type="email" placeholder="Email" required>
+        </div>
+        <div
+          class="flex flex-col gap-[0.1rem] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] overflow-hidden outline-none rounded-[2rem]">
+          <input class="bg-[#15191b] px-[40px] py-[20px] h-12 outline-none" type="text" id="asunto" placeholder="Asunto"
+            required>
+          <div class="relative w-[100%] h-[200px]">
+            <textarea
+              class="bg-[#15191b] px-[40px] py-[15px] border-[#C6AAE3] outline-none w-[100%] h-[100%] resize-none"
+              id="mensaje" placeholder="Mensaje..."></textarea>
+            <button class="top-4 right-5 absolute"><svg class="hover:scale-125 transition-all duration-100" width="24px"
+                height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                <g id="SVGRepo_iconCarrier">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.2111 2.06722L3.70001 5.94499C1.63843 6.46039 1.38108 9.28612 3.31563 10.1655L8.09467 12.3378C9.07447 12.7831 10.1351 12.944 11.1658 12.8342C11.056 13.8649 11.2168 14.9255 11.6622 15.9053L13.8345 20.6843C14.7139 22.6189 17.5396 22.3615 18.055 20.3L21.9327 4.78886C22.3437 3.14517 20.8548 1.6563 19.2111 2.06722ZM8.92228 10.517C9.85936 10.943 10.9082 10.9755 11.8474 10.6424C12.2024 10.5165 12.5417 10.3383 12.8534 10.1094C12.8968 10.0775 12.9397 10.0446 12.982 10.0108L15.2708 8.17974C15.6351 7.88831 16.1117 8.36491 15.8202 8.7292L13.9892 11.018C13.9553 11.0603 13.9225 11.1032 13.8906 11.1466C13.6617 11.4583 13.4835 11.7976 13.3576 12.1526C13.0244 13.0918 13.057 14.1406 13.4829 15.0777L15.6552 19.8567C15.751 20.0673 16.0586 20.0393 16.1147 19.8149L19.9925 4.30379C20.0372 4.12485 19.8751 3.96277 19.6962 4.00751L4.18509 7.88528C3.96065 7.94138 3.93264 8.249 4.14324 8.34473L8.92228 10.517Z"
+                    fill="#C6AAE3" />
+                </g>
               </svg></button>
           </div>
         </div>
