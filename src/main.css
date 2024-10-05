@@ -15,11 +15,11 @@ strong {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.375;
 }
 
 .puesto::after {
@@ -48,8 +48,8 @@ h4 {
 }
 
 .lineTime {
-  top: 112px;
-  width: 100vw;
+  top: 18.7rem;
+  width: 60rem;
   height: 8px;
   position: absolute;
   background-color: #2D4960;
@@ -118,4 +118,52 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 50px rgb(19, 25, 29) inset !important; /* Cambia el fondo a blanco */
   -webkit-text-fill-color: rgb(255, 255, 255) !important; /* Cambia el color del texto */
   -webkit-border-radius: 0 0 0 0;
+}
+
+@media (max-width: 1310px) {
+  .lineTime {
+    width: 57rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .lineTime {
+    top: 12rem;
+    left: 0.75rem;
+    width: 8px;
+    height: 45rem;
+  }
+
+  .puesto::after {
+    top: 40%;
+    left: 0;
+  }
+
+  .puesto-actual::after {
+    top: 40%;
+    left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .puesto-actual::after {
+    top: 5%;
+    left: 0;
+  }
+
+  .puesto::after {
+    top: 5%;
+    left: 0;
+  }
+
+  .lineTime {
+    top: 12rem;
+    left: 0.75rem;
+    width: 8px;
+    height: 78rem;
+  }
+
+  /* #aboutMeSection > div > img {
+    src: url();
+  } */
 }

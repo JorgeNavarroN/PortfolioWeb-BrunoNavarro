@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const opciones = {
       root: null,
       rootMargin: '10px',
-      threshold: 0.5
+      threshold: 0.3
     }
     
     links.forEach(link => {

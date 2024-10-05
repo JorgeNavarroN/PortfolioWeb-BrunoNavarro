@@ -11,48 +11,56 @@
 
 <body
   class="bg-gradient-to-t justify-center items-center flex flex-col from-gray-950 via-gray-900 to-gray-800 text-white">
-  <header class="w-[920px] relative">
-    <nav class="top-1/2 left-[4rem] -translate-y-1/2 fixed">
-      <ul class="flex flex-col w-[50px] h-[400px] justify-between items-center">
+  <header class="w-[920px] relative z-50">
+    <nav
+      class="min-[1310px]:top-1/2 min-[1310px]:left-[4rem] min-[1310px]:-translate-y-1/2 fixed z-50 max-[1310px]:inset-0 max-[1310px]:p-8 h-min max-[1310px]:backdrop-blur-md max-[1310px]:backdrop-brightness-[.7] drop-shadow-[0_0_10px_rgba(198,170,227,0.53)]">
+      <ul class="flex flex-col max-[1310px]:flex-row max-[600px]:gap-5 gap-14 justify-center items-center">
         <li id="experience"
-          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          class="itemNav tooltip cursor-pointer pointer-fine:hover:drop-shadow-[10px_10px_10px_rgba(198,170,227,0.53)] pointer-fine:hover:scale-150 transition-all duration-200 group">
           <a class="flex flex-col items-center" href="#experienceSection">
-            <img class="w-[36px] h-[36px]" src="../assets/icons/experienceicon.svg" alt="experience.svg">
-            <span class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Experiencia</span>
+            <img class="w-[36px] h-[36px] max-[1310px]:w-[24px] max-[1310px]:h-[24px]"
+              src="../assets/icons/experienceicon.svg" alt="experience.svg">
+            <span
+              class="opacity-0 pointer-fine:group-hover:opacity-100 text-xs transition-opacity duration-200">Experiencia</span>
           </a>
         </li>
         <li id="projects"
-          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
+          class="itemNav tooltip cursor-pointer pointer-fine:hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] pointer-fine:hover:scale-150 transition-all duration-200 group">
           <a class="flex flex-col items-center" href="#projectsSection">
-            <img class="w-[36px] h-[36px]" src="../assets/icons/proyectsicon.png" width="36px" height="36px"
-              alt="projects.png">
-            <span class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Proyectos</span>
+            <img class="w-[36px] h-[36px] max-[1310px]:w-[24px] max-[1310px]:h-[24px]"
+              src="../assets/icons/proyectsicon.png" width="36px" height="36px" alt="projects.png">
+            <span
+              class="opacity-0 pointer-fine:group-hover:opacity-100 text-xs transition-opacity duration-200">Proyectos</span>
           </a>
         </li>
         <li id="aboutMe"
-          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
-          <a class="flex flex-col items-center" href="#aboutMeSection"><img class="w-[36px] h-[36px]"
+          class="itemNav tooltip cursor-pointer pointer-fine:hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] pointer-fine:hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#aboutMeSection">
+            <img class="w-[36px] h-[36px] max-[1310px]:w-[24px] max-[1310px]:h-[24px]"
               src="../assets/icons/profileicon.svg" width="36px" height="36px" alt="sobremi.svg"><span
-              class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Sobre Mí</span></a>
+              class="opacity-0 pointer-fine:group-hover:opacity-100 text-xs transition-opacity duration-200">Sobre
+              Mí</span></a>
         </li>
         <li id="contact"
-          class="itemNav tooltip cursor-pointer hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] hover:scale-150 transition-all duration-200 group">
-          <a class="flex flex-col items-center" href="#contactSection"><img class="w-[36px] h-[36px]"
+          class="itemNav tooltip cursor-pointer pointer-fine:hover:drop-shadow-[0_0_10px_rgba(198,170,227,0.53)] pointer-fine:hover:scale-150 transition-all duration-200 group">
+          <a class="flex flex-col items-center" href="#contactSection">
+            <img class="w-[36px] h-[36px] max-[1310px]:w-[24px] max-[1310px]:h-[24px]"
               src="../assets/icons/contacticon.svg" width="36px" height="36px" alt="contacto.svg"><span
-              class="opacity-0 group-hover:opacity-100 text-xs transition-opacity duration-200">Contacto</span></a>
+              class="opacity-0 pointer-fine:group-hover:opacity-100 text-xs transition-opacity duration-200">Contacto</span></a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="flex flex-col gap-36 my-[10rem]">
-    <article class="flex flex-col gap-5 w-[920px] seccion">
+    <article
+      class="flex flex-col gap-5 w-[920px] max-[920px]:w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] seccion">
       <span class="flex flex-row gap-5">
-        <h1 class="text-[82px] font-bold">Bruno Navarro</h1>
+        <h1 class="text-[82px] font-bold max-[950px]:text-[4rem]">Bruno Navarro</h1>
         <!-- <img class="size-[114px] rounded-[20px] border-[5px] border-[#2D4960]" src="https://github.com/brunonavarro.png"
           alt="mifotogithub.png"> -->
       </span>
-      <p class="text-[24px]">
+      <p class="text-[1.5rem] max-[600px]:text-[1.2rem]">
         <strong>Ingeniero en Informática</strong>, con <strong>4 años de experiencia</strong> en <br> Desarrollo de
         aplicaciones móviles
         <strong>Android</strong> <svg class="inline-block align-text-bottom w-[28px] h-[28px]" id="Layer_1"
@@ -71,23 +79,23 @@
       </p>
       <span class="flex flex-row gap-1 text-[24px] items-center"><img src="../assets/icons/locationicon.svg"
           width="48px" height="48px" alt="ubiclogo.png"> Piura - Perú 🇵🇪</span>
-      <ul class="flex flex-row gap-5">
+      <ul class="flex flex-row gap-5 max-[600px]:flex-col">
         <li>
-          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
+          <a class="bg-slate-800 border-[#2D4960] items-center justify-center border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
             href="https://www.linkedin.com/in/bruno-navarro-nu%C3%B1ez/" target="_blank">
             <img src="../assets/icons/linkedin-icon.svg" width="24" height="24" alt="linkedinlogo.png">
             LinkedIn
           </a>
         </li>
         <li>
-          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
+          <a class="bg-slate-800 border-[#2D4960] items-center justify-center border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
             href="" target="_blank">
             <img src="../assets/icons/emailicon.svg" width="24" height="24" alt="correo.png">
             Contactame
           </a>
         </li>
         <li>
-          <a class="bg-slate-800 border-[#2D4960] border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
+          <a class="bg-slate-800 border-[#2D4960] items-center justify-center border-[3px] flex flex-row gap-2 px-10 py-1 rounded-full hover:bg-[#2D4960] transition-colors duration-200"
             href="https://github.com/brunonavarro" target="_blank">
             <img src="../assets/icons/githubicon-dark.svg" width="24" height="24" alt="github.png">
             Github
@@ -96,20 +104,24 @@
       </ul>
     </article>
 
-    <section class="flex flex-col gap-14 w-[920px] seccion" id="experienceSection">
+    <section
+      class="flex flex-col gap-14 -z-50 w-[920px] max-[920px]:w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] relative seccion"
+      id="experienceSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/experienceicon.svg" width="48" height="48" alt="experience.png">
         <h2 class="text-[35px] my-10 font-bold">Experiencia Laboral</h2>
       </span>
-      <ol class="flex flex-row h-fit justify-between">
+      <div class="lineTime"></div>
+      <ol class="flex flex-row max-[920px]:flex-col h-fit gap-[4rem]">
         <li>
-          <article class="flex flex-col gap-20 relative">
-            <div>
+          <article
+            class="flex flex-col max-[920px]:flex-row max-[600px]:flex-col max-[920px]:justify-between max-[920px]:items-center max-[600px]:items-start min-[920px]:gap-20 relative max-[600px]:gap-5">
+            <div class="pl-10">
               <h3><strong>NTT DATA</strong></h3>
               <p class="">Actualmente...</p>
             </div>
-            <div class="lineTime"></div>
-            <div class="w-[265px] h-[250px]">
+            <div
+              class="w-[265px] h-[250px] max-[920px]:w-[400px] max-[920px]:h-[auto] max-[820px]:w-[265px] max-[600px]:pl-10">
               <h4 class="puesto-actual"><b>Ingeniero de aplicaciones Android</b></h4>
               <p>Lideré la implementación de pruebas unitarias y la mejora
                 de la cobertura de código en la plataforma web del cliente
@@ -121,12 +133,14 @@
         </li>
 
         <li>
-          <article class="flex flex-col gap-20 relative">
-            <div>
+          <article
+            class="flex flex-col max-[920px]:flex-row max-[600px]:flex-col max-[920px]:justify-between max-[920px]:items-center max-[600px]:items-start min-[920px]:gap-20 relative max-[600px]:gap-5">
+            <div class="pl-10">
               <h3><strong>Everis</strong></h3>
               <p class="">Abril 2021</p>
             </div>
-            <div class="w-[265px] h-[250px]">
+            <div
+              class="w-[265px] h-[250px] max-[920px]:w-[400px] max-[920px]:h-[auto] max-[820px]:w-[265px] max-[600px]:pl-10">
               <h4 class="puesto"><b>Ingeniero junior de aplicaciones Android</b></h4>
               <p>Desarrollé funcionalidades para la aplicación de ventas del cliente, aplicando microservicios,
                 autenticación JWT, validaciones biométricas, y arquitectura MVVM con diseño de componentes usando
@@ -136,12 +150,14 @@
         </li>
 
         <li>
-          <article class="flex flex-col gap-20 relative">
-            <div>
+          <article
+            class="flex flex-col max-[920px]:flex-row max-[600px]:flex-col max-[920px]:justify-between max-[920px]:items-center max-[600px]:items-start min-[920px]:gap-20 relative max-[600px]:gap-5">
+            <div class="pl-10">
               <h3><strong>AventuraTech</strong></h3>
               <p>Marzo 2020</p>
             </div>
-            <div class="w-[265px] h-[250px]">
+            <div
+              class="w-[265px] h-[250px] max-[920px]:w-[400px] max-[920px]:h-[auto] max-[820px]:w-[265px] max-[600px]:pl-10">
               <h4 class="puesto"><b>Desarrollador de aplicaciones Android</b></h4>
               <p>Colaboré en el desarrollo de una aplicación Android para control de calidad de limpieza, utilizando
                 Firebase para bases de datos en tiempo real y notificaciones push, y aplicando arquitectura MVVM con
@@ -152,18 +168,21 @@
       </ol>
     </section>
 
-    <section class="flex flex-col gap-10 w-[920px] seccion" id="projectsSection">
+    <section
+      class="flex flex-col gap-10 w-[920px] max-[920px]:w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] seccion"
+      id="projectsSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/proyectsicon.png" width="48" height="48" alt="proyectos.png">
         <h2 class="text-[35px] my-10 font-bold">Proyectos</h2>
       </span>
       <ul class="flex flex-col gap-20">
-        <li class="flex flex-row gap-5">
+        <li class="flex flex-row gap-5 max-[820px]:flex-col">
           <div
-            class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
-            <img src="../assets/img/nullOut_image.png" width="252" alt="logoNullOut.png">
+            class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl max-[820px]:w-[auto]">
+            <img class="-z-50" src="../assets/img/nullOut_image.png" width="252" alt="logoNullOut.png">
           </div>
-          <div class="w-[720px] flex flex-col justify-between">
+          <div
+            class="w-[720px] max-[820px]:w-[520px] max-[820px]:gap-5 flex flex-col min-[820px]:justify-between max-[600px]:w-[320px]">
             <a href="https://github.com/brunonavarro/NullOutLib" target="_blank"
               class="linkProyect flex flex-row items-center w-fit relative" href="">
               NullOut
@@ -189,10 +208,10 @@
           </div>
         </li>
 
-        <li class="flex flex-row gap-5">
-          <div class="w-[720px] flex flex-col justify-between">
+        <li class="flex flex-row gap-5 max-[820px]:flex-col-reverse">
+          <div class="w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] flex flex-col gap-5">
             <a href="https://github.com/brunonavarro/SideSheetComposeDialog" target="_blank"
-              class="linkProyect flex flex-row items-center w-fit relative" href="">
+              class="linkProyect flex flex-row items-center max-[600px]:text-[1.5rem] w-fit relative" href="">
               SideSheetComposeDialog
               <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
                 <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -209,7 +228,7 @@
               Desarrollé una librería inspirada en SideSheetBehavior de Material Design con Jetpack Compose, para
               solucionar problemas de compatibilidad con versiones anteriores en proyectos grandes y específicos.
             </p>
-            <span class="flex flex-row gap-7 items-center">
+            <span class="flex flex-row gap-7 items-center max-[600px]:flex-col max-[600px]:items-start">
               <div class="bg-[#211D23] w-[120px] h-[39px] grid place-content-center justify-center rounded-full" for="">
                 <img src="../assets/icons/kotlinicon.svg" width="82px" alt="kotlinlogo.png">
               </div>
@@ -220,17 +239,17 @@
             </span>
           </div>
           <div
-            class="bg-white w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
-            <img src="../assets/img/sideSheetComposeDialog_image.png" width="252" alt="logoNullOut.png">
+            class="bg-white w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl max-[820px]:w-[auto]">
+            <img class="-z-50" src="../assets/img/sideSheetComposeDialog_image.png" width="252" alt="logoNullOut.png">
           </div>
         </li>
 
-        <li class="flex flex-row gap-5">
+        <li class="flex flex-row gap-5 max-[820px]:flex-col">
           <div
-            class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl">
+            class="bg-black w-[320px] h-[200px] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] grid place-content-center rounded-3xl max-[820px]:w-[auto]">
             <img src="../assets/img/dragoDroidImage-dark.png" width="252" alt="logoNullOut.png">
           </div>
-          <div class="w-[720px] flex flex-col justify-between">
+          <div class="w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] flex flex-col gap-5">
             <a href="https://github.com/brunonavarro/DragDroid" target="_blank"
               class="linkProyect flex flex-row items-center w-fit relative" href="">
               DragDroid
@@ -250,7 +269,7 @@
               Cuyo máximo alcance es como administrador de actividades o lista de tareas. Desarrollado con Jetpack
               Compose.
             </p>
-            <span class="flex flex-row gap-7 items-center">
+            <span class="flex flex-row gap-7 items-center max-[600px]:flex-col max-[600px]:items-start">
               <div class="bg-[#211D23] w-[120px] h-[39px] grid place-content-center justify-center rounded-full" for="">
                 <img src="../assets/icons/kotlinicon.svg" width="82px" alt="kotlinlogo.png">
               </div>
@@ -265,41 +284,56 @@
       </ul>
     </section>
 
-    <section class="w-[920px] seccion" id="aboutMeSection">
+    <section class="w-[920px] max-[920px]:w-[720px] max-[820px]:w-[520px] max-[600px]:w-[320px] seccion"
+      id="aboutMeSection">
       <span class="flex flex-row gap-3 items-center">
         <img src="../assets/icons/profileicon.svg" width="48" height="48" alt="sobreMi.png">
         <h2 class="text-[35px] my-10 font-bold">Sobre mi</h2>
       </span>
-      <div class="flex flex-row items-center gap-16">
+      <div class="flex flex-row items-center gap-16 max-[920px]:flex-col">
         <article class="flex flex-col">
           <p>
-            Stet invidunt velit erat. Velit amet dolor takimata vero placerat sanctus aliquam sit ipsum ipsum vero rebum
-            justo eum. Clita et facilisis takimata invidunt magna possim invidunt takimata velit ut ea. Iusto gubergren
-            eum.
+            Ingeniero en Informática con 4 años de especialización en desarrollo de aplicaciones móviles Android.
+            Destaco por mi alta capacidad de aprendizaje y adaptación a nuevas tecnologías en el campo del desarrollo
+            móvil.
           </p>
           <br>
+          <b>Características clave:</b>
+          <br>
+          <ul class="flex flex-col gap-2 pl-5">
+            <li>✅ Experiencia sólida en desarrollo Android.</li>
+            <li>✅ Habilidad para aprender rápidamente nuevas tecnologías.</li>
+            <li>✅ Enfoque innovador para resolver problemas.</li>
+            <li>✅ Pensamiento creativo orientado a la mejora continua.</li>
+          </ul>
+          </p>
+          <br>
+          <b>Filosofía de trabajo:</b>
+          <br>
+          <cite>"A veces en lo simple se encuentran grandes soluciones"</cite>
+          <br>
           <p>
-            In elitr no dolore vero duis. Clita iusto lorem nulla justo justo consectetuer nam ut consectetuer exerci
-            eirmod
-            praesent consequat amet nostrud sit vero. Lorem diam et suscipit eros. Tempor invidunt gubergren stet sed
-            dolore
-            et consequat praesent. Ex et quod est molestie diam elitr duo amet sea elit et euismod et vero lorem no
-            tempor.
+            Busco constantemente formas de optimizar procesos y crear soluciones eficientes, creyendo que la simplicidad
+            puede ser la clave para abordar desafíos complejos en el desarrollo de software.
           </p>
         </article>
-        <img class="rounded-[20px] border-[5px] border-[#2D4960] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)]"
-          src="https://media.licdn.com/dms/image/v2/D4E03AQFA9A06OphSYA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686600920490?e=1732752000&v=beta&t=W5gPSTVXPahBl8ASWulCqAj-5iE8x3GV5oD5rv1JsZk"
-          width="300px" height="300px" alt="fotobruno.png">
+        <img class="rounded-[20px] border-[5px] border-[#2D4960] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] block max-[920px]:hidden"
+          src="/assets/img/Foto-2.jpeg" width="300px" height="300px" alt="fotobruno.png">
+        <img class="rounded-[20px] border-[5px] border-[#2D4960] drop-shadow-[0_0_5px_rgba(0,0,0,0.53)] hidden max-[920px]:block"
+          src="https://media.licdn.com/dms/image/v2/D4E03AQFA9A06OphSYA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686600920490?e=1732752000&v=beta&t=W5gPSTVXPahBl8ASWulCqAj-5iE8x3GV5oD5rv1JsZk" width="300px" height="300px" alt="fotobruno.png">
       </div>
     </section>
 
-    <section class="w-[920px] items-center flex flex-col gap-14 seccion" id="contactSection">
+    <section
+      class="w-[920px] max-[920px]:w-[720px] max-[820px]:w-[520px] items-center flex flex-col gap-14 max-[600px]:w-[320px] seccion"
+      id="contactSection">
       <span class="flex flex-col items-center">
         <h2 class="text-[35px] font-bold">¿Quieres contactarme?</h2>
         <p class="text-[24px]">¡Enviame un email por este medio!</p>
       </span>
-      <form class="grid gap-7 w-[780px]" id="emailForm">
-        <div class="flex flex-row justify-center gap-10 h-12">
+      <form class="grid gap-7 w-[780px] max-[920px]:w-[620px] max-[820px]:w-[520px] max-[600px]:w-[320px]"
+        id="emailForm">
+        <div class="flex flex-row justify-center gap-10 h-fit max-[600px]:flex-col max-[600px]:gap-7">
           <div class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] rounded-full overflow-hidden">
             <input class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[100%] outline-none" id="nombre" type="text"
               placeholder="Nombre" required>
@@ -310,8 +344,8 @@
           </div>
         </div>
         <div class="drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] rounded-full overflow-hidden">
-          <input
-            class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[112%] outline-none" id="email" type="email" placeholder="Email" required>
+          <input class="bg-[#15191b] px-[40px] py-[10px] w-[100%] h-[100%] outline-none" id="email" type="email"
+            placeholder="Email" required>
         </div>
         <div
           class="flex flex-col gap-[0.1rem] drop-shadow-[0_0_5px_rgba(198,170,227,0.53)] w-[100%] overflow-hidden outline-none rounded-[2rem]">
@@ -338,14 +372,15 @@
     </section>
   </main>
   <br>
-  <footer class="flex flex-row mx-28 my-16 gap-28 justify-center">
-    <span class="flex flex-row gap-10">
+  <footer class="flex flex-row mx-28 my-16 gap-28 max-[920px]:flex-col max-[920px]:items-center justify-center">
+    <ul class="flex flex-row gap-10 max-[600px]:flex-col max-[600px]:justify-center items-center">
       <a class="link relative" href="#aboutMeSection">Sobre mi</a>
-      <a class="link relative" href="">Contacto</a>
-      <a class="link relative" href="https://github.com/brunonavarro" target="_blank">Github</a>
+      <a class="link relative" href="#contactSection">Contacto</a>
+      <a class="link relative" href="https://github.com/brunonavarro" target="_blank">GitHub</a>
       <a class="link relative" href="https://www.linkedin.com/in/bruno-navarro-nu%C3%B1ez/" target="_blank">LinkedIn</a>
-    </span>
-    <span class="text-[16px]">© 2024 Bruno Navarro. Casi todos los derechos reservados.</span>
+    </ul>
+    <span class="text-[16px] derechos max-[600px]:text-center">© 2024 Bruno Navarro. Todos los derechos
+      reservados.</span>
   </footer>
 </body>
 
